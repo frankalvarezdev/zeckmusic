@@ -20,28 +20,31 @@ const releases = [
         cover: 'https://spinninrecords.com/media/cache/resolve/release_thumbnail/uploads/release/Marten%2520H%25C3%25B8rger%2520%25E2%2580%2593%2520Ill%2520Behavior.jpg',
         link: 'https://www.youtube.com',
     },
-    {
-        name: 'Prueba',
-        cover: 'https://spinninrecords.com/media/cache/resolve/release_thumbnail/uploads/release/Marten%2520H%25C3%25B8rger%2520%25E2%2580%2593%2520Ill%2520Behavior.jpg',
-        link: 'https://www.youtube.com',
-    },
 ]
 ---
 
-<div class='container'>
-    <h1 class='text-white text-4xl font-bold mb-6'>Releases</h1>
-
+<div class='container pb-16'>
+    <div class='mb-6'>
+        <h1 class='text-white text-2xl md:text-4xl font-bold'>Releases</h1>
+        <p class='text-gray-11'>
+            Escucha mis últimos lanzamientos en las plataformas digitales.
+        </p>
+        <div class='w-20 h-1 bg-primary opacity-50 mt-2'></div>
+    </div>
     <div class='grid grid-cols-2 lg:grid-cols-4 gap-6'>
         {
             releases.map((release) => (
-                <div>
+                <a
+                    href={release.link}
+                    class='hover:scale-105 transition duration-300 ease-in-out'
+                >
                     <div>
                         <img src={release.cover} alt='Release cover' />
                     </div>
-                    <h2 class='text-white mt-2 font-bold text-xl'>
+                    <h2 class='text-white mt-2 text-lg md:text-xl'>
                         {release.name}
                     </h2>
-                </div>
+                </a>
             ))
         }
     </div>

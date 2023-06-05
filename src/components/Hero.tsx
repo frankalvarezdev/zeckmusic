@@ -33,7 +33,7 @@ const Hero = () => {
     }, [audio])
 
     return (
-        <div className='relative'>
+        <div className='relative bg-backgroundSecondary mb-6'>
             <div className='py-8 md:py-16 px-6'>
                 <div className='max-w-3xl mx-auto'>
                     <div className='grid grid-cols-1 md:grid-cols-[1fr,auto] gap-8'>

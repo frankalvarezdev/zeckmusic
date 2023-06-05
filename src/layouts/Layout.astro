@@ -9,7 +9,7 @@ const { title } = Astro.props
 ---
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='es'>
     <head>
         <meta charset='UTF-8' />
         <meta name='viewport' content='width=device-width' />
@@ -28,8 +28,8 @@ const { title } = Astro.props
         />
     </head>
     <body>
-        <div class='navbar bg-backgroundPrimary shadow-none'>
-            <div class='navbar-start hidden md:block'>
+        <div class='navbar bg-backgroundPrimary shadow-none max-md:hidden'>
+            <div class='navbar-start'>
                 <a class='navbar-item font-extrabold'>ZECK MUSIC</a>
             </div>
             <div class='navbar-center'>
@@ -39,6 +39,36 @@ const { title } = Astro.props
             </div>
             <div class='navbar-end'>
                 <a class='navbar-item'> </a>
+            </div>
+        </div>
+
+        <div class='navbar rounded-lg bg-backgroundPrimary md:hidden'>
+            <div class='navbar-start'>
+                <a class='navbar-item'> ZECK MUSIC</a>
+            </div>
+            <div class='navbar-end'>
+                <div class='dropdown-container'>
+                    <div class='dropdown'>
+                        <label
+                            class='btn btn-solid-primary flex cursor-pointer px-4'
+                            tabindex='0'
+                        >
+                            <i class='bx bx-menu'></i>
+                        </label>
+
+                        <div
+                            class='dropdown-menu dropdown-menu-bottom-left bg-backgroundPrimary'
+                        >
+                            <a class='dropdown-item text-sm'> Mainstage</a>
+                            <a tabindex='-1' class='dropdown-item text-sm'>
+                                Releases
+                            </a>
+                            <a tabindex='-1' class='dropdown-item text-sm'>
+                                Contacto
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

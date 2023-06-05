@@ -22,6 +22,7 @@ module.exports = {
 				colors: {
 					primary: "#235264",
 					backgroundPrimary: "#964643",
+					backgroundSecondary: "#FFFFFF",
 				},
 			},
 			{
@@ -30,6 +31,7 @@ module.exports = {
 				colors: {
 					primary: "#00C7FF",
 					backgroundPrimary: "#061829",
+					backgroundSecondary: "#0D2538",
 				},
 			},
 		],
