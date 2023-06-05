@@ -1,0 +1,48 @@
+---
+const releases = [
+    {
+        name: 'Prueba',
+        cover: 'https://spinninrecords.com/media/cache/resolve/release_thumbnail/uploads/release/Marten%2520H%25C3%25B8rger%2520%25E2%2580%2593%2520Ill%2520Behavior.jpg',
+        link: 'https://www.youtube.com',
+    },
+    {
+        name: 'Prueba',
+        cover: 'https://spinninrecords.com/media/cache/resolve/release_thumbnail/uploads/release/Marten%2520H%25C3%25B8rger%2520%25E2%2580%2593%2520Ill%2520Behavior.jpg',
+        link: 'https://www.youtube.com',
+    },
+    {
+        name: 'Prueba',
+        cover: 'https://spinninrecords.com/media/cache/resolve/release_thumbnail/uploads/release/Marten%2520H%25C3%25B8rger%2520%25E2%2580%2593%2520Ill%2520Behavior.jpg',
+        link: 'https://www.youtube.com',
+    },
+    {
+        name: 'Prueba',
+        cover: 'https://spinninrecords.com/media/cache/resolve/release_thumbnail/uploads/release/Marten%2520H%25C3%25B8rger%2520%25E2%2580%2593%2520Ill%2520Behavior.jpg',
+        link: 'https://www.youtube.com',
+    },
+    {
+        name: 'Prueba',
+        cover: 'https://spinninrecords.com/media/cache/resolve/release_thumbnail/uploads/release/Marten%2520H%25C3%25B8rger%2520%25E2%2580%2593%2520Ill%2520Behavior.jpg',
+        link: 'https://www.youtube.com',
+    },
+]
+---
+
+<div class='container'>
+    <h1 class='text-white text-4xl font-bold mb-6'>Releases</h1>
+
+    <div class='grid grid-cols-2 lg:grid-cols-4 gap-6'>
+        {
+            releases.map((release) => (
+                <div>
+                    <div>
+                        <img src={release.cover} alt='Release cover' />
+                    </div>
+                    <h2 class='text-white mt-2 font-bold text-xl'>
+                        {release.name}
+                    </h2>
+                </div>
+            ))
+        }
+    </div>
+</div>
